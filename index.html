@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .select{
+            padding: 8px 12px;
+            color: #333333;
+            background-color: #eeeeee;
+            border: 1px solid #dddddd;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 50px;
+
+            /* replace default styling */
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fille:%23666666;"/></svg>');
+            background-position: right 10px top 50%;
+            background-repeat: no-repeat;
+            background-size: 10px;
+            padding-right: 30px;
+        }
+
+        .select:focus,
+        .select:hover{
+            outline: none;
+            border: 1px solid #bbbbbb;
+        }
+
+        .select option {
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <select class="select">
+        <option disabled selected>Make</option>
+        <option value="honda">Honda</option>
+        <option value="mazda">Mazda</option>
+    </select>
+</body>
+</html>
